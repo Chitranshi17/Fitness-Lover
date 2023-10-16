@@ -11,73 +11,76 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fasthand&display=swap" rel="stylesheet">
     <style>
          /* CSS Reset - */
+         html{
+            font-size: 62.5%;
+         }
          body{
             font-family: 'Anton', sans-serif;
             font-family: 'Fasthand', cursive;
-            margin: 0px;
-            padding: 0px;
+            margin: 0rem;
+            padding: 0rem;
             color: white; 
             /* background-image: url('/img/abs-1850926_960_720.jpg'); */
             background-image: url(./img/abs-1850926_960_720.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-
+            background-position: center;
          }
          .left{
             display: inline-block;
             position: absolute;
-            left: 60px;
-            top: 20px;
+            left: 6rem;
+            top: 2rem;
 /* border: 2px solid red; */
          }
          .left img{
             display: block;
-            width: 80px;
+            width: 8rem;
             margin: auto;
             /* filter: invert(100%); */
                   }
                   .left div{
                      text-align: center;
                     
-                     font-size: 26px;}
+                     font-size: 2.6rem;}
          .mid{
-            margin: 23px;
+            margin: 2.3rem;
             display: block;
             width: 48%;
-            margin: 29px auto;
+            margin: 2.9rem auto;
 /* border: 2px solid green; */
          }
          .right{
             display: inline-block;
             position: absolute;
-            right: 34px;
-            top: 43px;
+            right: 3.4rem;
+            top: 4.3rem;
 /* border: 2px solid yellow; */
          }
          .navbar{
             display: inline-block;
          }
          .navbar li{
-            font-size: 20px;
+            font-size: 2rem;
             display: inline-block;
          }
          .navbar li a{
             color: white;
             text-decoration: none;
-            padding: 30px;    
+            padding: 3rem;    
          }
          .navbar li a:hover, .navbar li a.active{
             text-decoration: underline;
             color: rgb(221, 209, 209);
          }
          .btn{
-            margin: 0px 9px;
+            margin: 0rem .9rem;
             color: white;
             background-color: black;
-            padding: 4px 14px;
-            border: 2px solid rgb(37, 30, 30);
-            border-radius: 10px;
-            font-size: 20px;
+            padding: .4rem 1.4rem;
+            border: .2rem solid rgb(37, 30, 30);
+            border-radius: 1rem;
+            font-size: 2rem;
             cursor: pointer;
             font-family: 'Anton', sans-serif;
             font-family: 'Fasthand', cursive;
@@ -86,21 +89,21 @@
             background-color: rgb(70, 59, 59);
          }
          .container{
-            border: 2px solid white;
-    margin: 198px 101px;
-    padding: 60px 71px;
-    border-radius: 23px;
+            border: .2rem solid white;
+    margin: 19.8rem 10.1rem;
+    padding: 6rem 7.1rem;
+    border-radius: 2.3rem;
     width: 33%;
 }
 .formgroup input{
    text-align: center;
    display: block;
-   width: 400px;
-   padding: 14px;
-   border: 2px solid black;
-   margin: 11px auto;
-   border-radius: 17px;
-   font-size: 21px;
+   width: 90%;
+   padding: 1.4rem;
+   border: .2rem solid black;
+   margin: 1.1rem auto;
+   border-radius: 1.7rem;
+   font-size: 2.1rem;
    font-family: 'Anton', sans-serif;
    font-family: 'Fasthand', cursive;
 }
@@ -109,8 +112,26 @@
 }
 .container button{
    display: block;
-   width: 430px;
+   width: 90%;
    margin: auto;
+}
+
+
+/* Responsive */
+
+@media (max-width:768px) {
+   html{
+      font-size: 40%;
+   }
+   .navbar li{
+      display: none;
+   }
+}
+
+@media (max-width:340px) {
+   html{
+      font-size: 30%;
+   }
 }
             
     </style>
